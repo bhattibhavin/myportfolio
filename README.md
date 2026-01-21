@@ -1,5 +1,5 @@
 
-This is my portfolio website using React (Self - Learning) 
+This is my portfolio website using React (Self - Learning) in mobile screenshot its photo issue, not my code!
 
 
 # React + Vite
