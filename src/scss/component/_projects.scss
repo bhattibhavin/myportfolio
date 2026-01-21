@@ -1,0 +1,142 @@
+.projects_section {
+  padding: 60px 0;
+  position: relative;
+
+  &_inner {
+    .top_section {
+      max-width: 520px;
+
+      .tagline {
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: var(--Color_Primary_Colors_Sky);
+        margin-bottom: 12px;
+      }
+    }
+
+    .bottom_section {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+
+      .project_card {
+        position: relative;
+        padding: 30px;
+        border-radius: 24px;
+        width: calc(33.33% - 20px);
+
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(14px);
+
+        box-shadow:
+          0 0 0 1px rgba(255, 255, 255, 0.03),
+          0 30px 80px rgba(2, 22, 46, 0.5);
+
+        transition:
+          transform 0.4s ease,
+          box-shadow 0.4s ease,
+          border-color 0.4s ease;
+
+       
+
+        .tagline {
+          display: inline-block;
+          margin-bottom: 12px;
+          font-size: 11px;
+          letter-spacing: 1px;
+          padding: 4px 10px;
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.06);
+          color: rgba(255, 255, 255, 0.7);
+        }
+
+        .heading {
+          margin-bottom: 12px;
+        }
+
+        .content_section {
+          margin-bottom: 20px;
+          font-size: 15px;
+          line-height: 1.6;
+          color: rgba(255, 255, 255, 0.7);
+        }
+
+        .project_tech {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+
+          .tech_chip {
+            padding: 6px 12px;
+            font-size: 12px;
+            border-radius: 999px;
+
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.75);
+
+            transition:
+              transform 0.3s ease,
+              box-shadow 0.3s ease,
+              border-color 0.3s ease;
+
+            &.primary {
+              color: var(--Color_Primary_Colors_Sky);
+              border-color: rgba(66, 229, 255, 0.35);
+            }
+
+            &.secondary {
+              color: var(--Color_Secondary_Colors_Violet_Light);
+              border-color: rgba(205, 191, 255, 0.35);
+            }
+
+            &.accent {
+              color: rgba(143, 220, 255, 0.85);
+              border-color: rgba(143, 220, 255, 0.3);
+            }
+          }
+        }
+
+        &:hover {
+          transform: translateY(-10px);
+          border-color: rgba(66, 229, 255, 0.35);
+          box-shadow: 0 40px 120px rgba(66, 229, 255, 0.35);
+
+          .tech_chip {
+            transform: translateY(-2px);
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+
+
+@media (max-width: 1199px) {
+  .projects_section {
+    &_inner {
+      .bottom_section {
+        .project_card {
+          width: calc(50% - 15px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .projects_section {
+    &_inner {
+      .bottom_section {
+        .project_card {
+          padding: 25px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

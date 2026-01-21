@@ -1,0 +1,96 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+
+    background: rgba(2, 22, 46, 0.55);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.03),
+        0 20px 60px rgba(2, 22, 46, 0.6);
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(to right,
+                transparent,
+                rgba(66, 229, 255, 0.35),
+                transparent);
+    }
+
+    &_inner {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header_logo {
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: #ffffff;
+            cursor: pointer;
+
+            span {
+                background: linear-gradient(135deg, #42e5ff, #704cf4);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .header_nav {
+            display: flex;
+            gap: 32px;
+
+            a {
+                position: relative;
+                font-size: 14px;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 0.75);
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #ffffff;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -6px;
+                    width: 0;
+                    height: 2px;
+                    background: linear-gradient(135deg, #42e5ff, #704cf4);
+                    transition: width 0.3s ease;
+                    border-radius: 2px;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .header {
+        &_inner {
+            .header_nav {
+                display: none;
+            }
+
+            .header_logo {
+                font-size: 20px;
+            }
+        }
+    }
+}

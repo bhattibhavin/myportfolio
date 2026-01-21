@@ -1,0 +1,97 @@
+.contact_section {
+    margin: 80px 0;
+    text-align: center;
+
+    &_inner {
+        max-width: 680px;
+        margin: 0 auto;
+
+        .tagline {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: var(--Color_Primary_Colors_Sky);
+            margin-bottom: 12px;
+        }
+
+        .heading {
+            margin-bottom: 16px;
+        }
+
+        .subtext {
+            font-size: 16px;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 40px;
+        }
+
+        .contact_actions {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            justify-content: center;
+            margin-bottom: 40px;
+
+            .btn {
+                padding: 14px 28px;
+                border-radius: 999px;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                transition: all 0.3s ease;
+
+                &.primary {
+                    background: linear-gradient(135deg,
+                            rgba(66, 229, 255, 0.9),
+                            rgba(112, 76, 244, 0.9));
+                    color: #000;
+                }
+
+                &.secondary {
+                    background: transparent;
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+                    color: #fff;
+                }
+
+                &:hover {
+                    transform: translateY(-3px);
+                }
+            }
+        }
+
+        .social_links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+
+            a {
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.6);
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: var(--Color_Primary_Colors_Sky);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1359px) {
+    .contact_section {
+        margin: 70px 0;
+    }
+}
+@media (max-width: 1199px) {
+    .contact_section {
+        margin: 60px 0;
+    }
+}
+@media (max-width: 991px) {
+    .contact_section {
+        margin: 50px 0;
+    }
+}
+@media (max-width: 767px) {
+    .contact_section {
+        margin: 40px 0;
+    }
+}
