@@ -17,8 +17,8 @@ const Contact = () => {
               Email Me
             </a>
 
-            <a href="/resume.pdf" target="_blank" className="btn secondary">
-              Download Resume
+            <a href="https://drive.google.com/drive/folders/1_vJvj8yyaydq5pOgB7xxoEqccLSrhwl-?usp=sharing" target="_blank" className="btn secondary">
+              View Resume
             </a>
           </div>
 
@@ -35,4 +35,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
