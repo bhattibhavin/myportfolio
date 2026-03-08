@@ -13,7 +13,7 @@ const Contact = () => {
           </p>
 
           <div className="contact_actions">
-            <a href="mailto:yourmail@gmail.com" className="btn primary">
+            <a href="mailto:workwithbhavin@gmail.com" className="btn primary">
               Email Me
             </a>
 
@@ -23,9 +23,9 @@ const Contact = () => {
           </div>
 
           <div className="social_links">
-            <a href="#" aria-label="GitHub">GitHub</a>
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-            <a href="#" aria-label="Twitter">Mail</a>
+            <a href="https://github.com/bhattibhavin/" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/bhavin-bhatti-3889a1245/" aria-label="LinkedIn">LinkedIn</a>
+            <a href="mailto:workwithbhavin@gmail.com" aria-label="Mail">Mail</a>
           </div>
 
         </div>
@@ -35,3 +35,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
