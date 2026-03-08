@@ -10,10 +10,10 @@
 main {
     display: block;
 }
-// .autoDisplay{
-//     animation: autoDisplayAnimation both;
-//     animation-timeline: view(60% 10%);
-// }
+.autoDisplay{
+    animation: autoDisplayAnimation both;
+    animation-timeline: view(60% 10%);
+}
 @keyframes autoDisplayAnimation{
     from{
         opacity:0;
@@ -908,3 +908,4 @@ blockquote>* {
     }
 
 }
+
